@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathFun - Aprende matemáticas jugando</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">
+            <h1>MathFun</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="juegos.html"><i class="fas fa-gamepad"></i> Juegos</a></li>
+            <li><a href="lecciones.html"><i class="fas fa-book"></i> Lecciones</a></li>
+            <li><a href="recursos.html"><i class="fas fa-download"></i> Recursos</a></li>
+            <li><a href="perfil.html"><i class="fas fa-user"></i> Mi Perfil</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>¡Aprende matemáticas de forma divertida!</h1>
+            <p>Juegos, actividades y recursos diseñados para que los niños aprendan matemáticas mientras se divierten</p>
+            <div class="hero-buttons">
+                <a href="juegos.html" class="btn btn-primary">Empezar a Jugar</a>
+                <a href="lecciones.html" class="btn btn-secondary">Ver Lecciones</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/images/niños.jpg" alt="Niños aprendiendo matemáticas">
+        </div>
+    </header>
+
+    <section class="features">
+        <h2>¿Por qué MathFun?</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h3>Aprendizaje lúdico</h3>
+                <p>Juegos interactivos que hacen que aprender matemáticas sea divertido y atractivo.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Seguimiento de progreso</h3>
+                <p>Sistema de seguimiento para que padres y profesores monitoreen el avance de los niños.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Niveles adaptados</h3>
+                <p>Contenido adaptado a diferentes edades y niveles de aprendizaje.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>Sistema de recompensas</h3>
+                <p>Incentivos y medallas por logros que motivan a seguir aprendiendo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-games">
+        <h2>Juegos Populares</h2>
+        <div class="game-cards">
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="/api/placeholder/300/200" alt="Juego de sumas">
+                </div>
+                <div class="game-info">
+                    <h3>Aventura de las Sumas</h3>
+                    <p>Aprende a sumar mientras ayudas al astronauta a recolectar estrellas</p>
+                    <div class="game-meta">
+                        <span class="age">6-8 años</span>
+                        <span class="difficulty">Fácil</span>
+                    </div>
+                    <a href="juegos.html#sumas" class="btn btn-sm">Jugar ahora</a>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="/api/placeholder/300/200" alt="Juego de multiplicaciones">
+                </div>
+                <div class="game-info">
+                    <h3>El Bosque de las Multiplicaciones</h3>
+                    <p>Aprende las tablas de multiplicar mientras ayudas a salvar el bosque mágico</p>
+                    <div class="game-meta">
+                        <span class="age">8-10 años</span>
+                        <span class="difficulty">Intermedio</span>
+                    </div>
+                    <a href="juegos.html#multiplicaciones" class="btn btn-sm">Jugar ahora</a>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="/api/placeholder/300/200" alt="Juego de geometría">
+                </div>
+                <div class="game-info">
+                    <h3>Ciudad Geométrica</h3>
+                    <p>Aprende sobre formas y geometría construyendo tu propia ciudad</p>
+                    <div class="game-meta">
+                        <span class="age">7-9 años</span>
+                        <span class="difficulty">Intermedio</span>
+                    </div>
+                    <a href="juegos.html#geometria" class="btn btn-sm">Jugar ahora</a>
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="juegos.html" class="btn btn-outline">Ver todos los juegos <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros usuarios</h2>
+        <div class="testimonial-slider" id="testimonial-slider">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Mi hijo ha mejorado muchísimo en matemáticas desde que utiliza MatematiDivertido. Ahora le encantan los números!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="/api/placeholder/50/50" alt="María" class="author-image">
+                    <div class="author-info">
+                        <h4>María García</h4>
+                        <p>Madre de Juan, 8 años</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Como profesor, recomiendo esta plataforma a todos mis alumnos. Los juegos son educativos y realmente efectivos."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="/api/placeholder/50/50" alt="Carlos" class="author-image">
+                    <div class="author-info">
+                        <h4>Carlos Rodríguez</h4>
+                        <p>Profesor de primaria</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"¡Me encanta este sitio! Los juegos son muy divertidos y aprendo mucho mientras juego."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="/api/placeholder/50/50" alt="Laura" class="author-image">
+                    <div class="author-info">
+                        <h4>Laura Sánchez</h4>
+                        <p>Estudiante, 9 años</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-controls">
+            <button id="prev-testimonial" class="testimonial-control"><i class="fas fa-chevron-left"></i></button>
+            <button id="next-testimonial" class="testimonial-control"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Mantente informado</h2>
+                <p>Suscríbete para recibir nuevos juegos, actividades y recursos educativos.</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn btn-primary">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>MatematiDivertido</h3>
+                <p>Haciendo que las matemáticas sean divertidas para niños de todas las edades.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="lecciones.html">Lecciones</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Recursos para padres</h3>
+                <ul>
+                    <li><a href="#">Guía para padres</a></li>
+                    <li><a href="#">Seguimiento de progreso</a></li>
+                    <li><a href="#">Consejos de estudio</a></li>
+                    <li><a href="#">Materiales imprimibles</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-envelope"></i> info@matematidivertido.com</li>
+                    <li><i class="fas fa-phone"></i> +34 123 456 789</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Matemáticas, 123</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MatematiDivertido. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de privacidad</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/testimonials.js"></script>
+</body>
+</html>
