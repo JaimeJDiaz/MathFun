@@ -1,0 +1,237 @@
+:root {
+    --primary: #FF9F1C;
+    --secondary: #2EC4B6;
+    --accent: #E71D36;
+    --light: #FDFFFC;
+    --dark: #011627;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #F0F8FF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.level-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.character-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.character {
+    font-size: 4rem;
+    transition: all 0.3s;
+}
+
+.speech-bubble {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.operation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    gap: 10px;
+}
+
+.number, .operator, .question-mark {
+    padding: 5px 10px;
+}
+
+.number {
+    background-color: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    min-width: 40px;
+    display: inline-block;
+}
+
+.operator {
+    color: var(--accent);
+}
+
+.question-mark {
+    color: var(--dark);
+}
+
+.options-container {
+    margin: 20px 0;
+}
+
+.options-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.option-btn {
+    width: 100px;
+    height: 80px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.option-btn:active {
+    transform: translateY(1px);
+}
+
+.feedback {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct {
+    color: var(--secondary);
+}
+
+.incorrect {
+    color: var(--accent);
+}
+
+.progress-container {
+    margin-top: 30px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.star {
+    font-size: 1.8rem;
+    color: #ccc;
+    transition: all 0.3s;
+}
+
+.star.filled {
+    color: gold;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
+
+/* Animaciones */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    75% { transform: translateX(8px); }
+}
+
+.bounce {
+    animation: bounce 0.5s;
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes celebrate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.celebrate {
+    animation: celebrate 0.5s;
+}
+
+.lives-container {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.hearts {
+    letter-spacing: 3px;
+}
+
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.3); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+.heart-animation {
+    animation: heartBeat 0.5s;
+}
+
+.lost-heart {
+    animation: shake 0.5s;
+    opacity: 0.5;
+}

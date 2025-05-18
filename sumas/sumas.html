@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumas con Niveles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>La aventura de las sumas</h1>
+            <div class="level-info">
+                <span>Nivel: <span id="current-level">1</span></span>
+                <span>Aciertos: <span id="correct-count">0</span>/10</span>
+            </div>
+            <div class="lives-container">
+                <span>Vidas: </span>
+                <span class="hearts" id="hearts">❤️❤️❤️❤️❤️</span>
+            </div>
+        </div>
+
+        <div class="character-container">
+            <div class="character" id="character">🐵</div>
+            <div class="speech-bubble" id="speech-bubble">¡Elige la respuesta correcta!</div>
+        </div>
+
+        <div class="operation-container animate__animated animate__pulse">
+            <span class="number" id="num1">5</span>
+            <span class="operator">+</span>
+            <span class="number" id="num2">3</span>
+            <span class="operator">=</span>
+            <span class="question-mark">?</span>
+        </div>
+
+        <div class="options-container">
+            <div class="options-row">
+                <button class="option-btn" id="option1">8</button>
+                <button class="option-btn" id="option2">7</button>
+            </div>
+            <div class="options-row">
+                <button class="option-btn" id="option3">9</button>
+                <button class="option-btn" id="option4">6</button>
+            </div>
+        </div>
+
+        <div class="feedback animate__animated" id="feedback"></div>
+
+        <div class="progress-container">
+            <div class="stars">
+                <div class="star" id="star1">☆</div>
+                <div class="star" id="star2">☆</div>
+                <div class="star" id="star3">☆</div>
+                <div class="star" id="star4">☆</div>
+                <div class="star" id="star5">☆</div>
+                <div class="star" id="star6">☆</div>
+                <div class="star" id="star7">☆</div>
+                <div class="star" id="star8">☆</div>
+                <div class="star" id="star9">☆</div>
+                <div class="star" id="star10">☆</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
